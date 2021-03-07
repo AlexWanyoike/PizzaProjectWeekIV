@@ -16,17 +16,88 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Into the Pizza</h1>
+    <div class="container">
+        <div class="header">
+            <h2>Make your Order</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="">Size Makes the Difference</label>
+                <div>
+                <select name="pizzasize" id="pizzasize" aria-placeholder="Size" type="radio" class="form-text">
+                    <option value="small" class="fas-check-circle">Small</option>
+                    <option value="medium" class="fas-check-circle">Medium</option>
+                    <option value="large" class="fas-check-circle">Large</option>
+                </select>
+                <small>Error Message</small>
+                </div>
+                
+            
+            </div>
+            
 
-    <div>
-        <H2>Which pizza are you Into?</H2>
-        <ul id="pizza-details">
-            <li>Small</li>
-            <li>Medium</li>
-            <li>Large</li>
-        </ul>
-        <h3>Total</h3>
+<!---->
+
+            <div class="form-control">
+            <label>The Crust Is a must</label>
+            <div>
+                <select name="pizzacrust" id="pizzacrust" aria-placeholder="Size" type="radio" class="form-text">
+                    <option value="crispy" class="fas-check-circle">Crispy</option>
+                    <option value="stuffed" class="fas-check-circle">Stuffed</option>
+                    <option value="gluten-free" class="fas-check-circle">Gluten-free</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            </div>
+            
+
+
+
+<!---->
+            <div class="form-control">
+            <label>What`s Pizza without Toppings?</label>
+            <div>
+                <select name="pizzatoppings" id="pizzatoppings" aria-placeholder="Size" type="radio" class="form-text">
+                    <option class="fas-check-circle">None</option>
+                    <option class="fas-check-circle">Mushrooms</option>
+                    <option class="fas-check-circle">Tikka Sauce</option>
+                    <option class="fas-check-circle">Cheese</option>
+                    <option class="fas-check-circle">Chilli</option>
+                </select>
+                <small>Error Message</small> 
+            </div>
+            </div>
+           
+
+
+<!---->
+            <div class="form-control">
+            <label for="">How many would you get?</label>
+                <div>
+                <input type="number" placeholder="Number of Pizza">
+                </div>  
+            </div>
+            
+
+
+ <!---->
+            <div class="form-control">
+            <label for="">Delivery services</label>
+                <div>
+                <button type="button" class="btn btn-primary btn-sm">Yes</button>
+                <button type="button" class="btn btn-secondary btn-sm">Checkout</button>
+                </div>  
+            </div>
+            
+
+<!---->
+            
+        </form>
+
+
+
     </div>
+
 
 
 </body>
