@@ -21,7 +21,7 @@
         <div class="header">
             <h2>Make your Order</h2>
         </div>
-        <form class="Form1" id="Form1">
+        <form class="Form1" id="Form1" onsubmit="getName(event)">
             <div class="form-control">
                 <label for="">Size Makes the Difference</label>
                 <div>
@@ -59,11 +59,11 @@
             <label>What`s Pizza without Toppings?</label>
             <div>
                 <select name="pizzatoppings" id="pizzatoppings" aria-placeholder="Size" type="radio" class="form-text">
-                    <option class="fas-check-circle">None</option>
-                    <option class="fas-check-circle">Mushrooms</option>
-                    <option class="fas-check-circle">Tikka Sauce</option>
-                    <option class="fas-check-circle">Cheese</option>
-                    <option class="fas-check-circle">Chilli</option>
+                    <option class="fas-check-circle" value="none">None</option>
+                    <option class="fas-check-circle" value="mushrooms">Mushrooms</option>
+                    <option class="fas-check-circle" value="tikkasauce">Tikka Sauce</option>
+                    <option class="fas-check-circle" value="cheese">Cheese</option>
+                    <option class="fas-check-circle" value="chilli">Chilli</option>
                 </select>
                 <small>Error Message</small> 
             </div>
@@ -106,7 +106,7 @@
         </div>
         <div class="btn-box">
             <button type="button" id="addpizza">Add Pizza</button>
-            <button type="button">Checkout</button>
+            <button type="submit">Submit</button>
         </div>  
     </div>
 
@@ -114,7 +114,7 @@
 <!---->
 
     <div class="step-row">
-        <div class="form-control">Summary:<span id="summary" ></span> </div>
+        <div class="form-control">Summary:<span id="summary" ></span></div>
         
         <div class="form-control">Total:<span id="output" ></span> </div>
     </div>
