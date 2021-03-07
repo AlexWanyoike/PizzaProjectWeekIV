@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+const form1 = document.getElementById('Form1');
 const pizzasize = document.getElementById('pizzasize');
 const pizzacrust = document.getElementById('pizzacrust');
 const pizzatoppings = document.getElementById('form');
@@ -10,7 +10,7 @@ const pizzanumber = document.getElementById('pizzanumber');
 
    checkInputs();
 
- });
+ };
   
  function checkInputs() {
    const pizzasizeValue = pizzasize.value.trim();
@@ -33,4 +33,10 @@ const pizzanumber = document.getElementById('pizzanumber');
   let pizza2= new pizzas("periperimedium",800);
   let pizza3= new pizzas("periperismall",600);
 
-  
+  <div class="form-control">
+    <label for="">Delivery services</label>
+        <div>
+        <button type="button" class="btn btn-primary btn-sm">Yes</button>
+        <button type="button" class="btn btn-secondary btn-sm">Checkout</button>
+        </div>  
+    </div>
