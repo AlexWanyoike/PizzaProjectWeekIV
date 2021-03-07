@@ -3,22 +3,11 @@ const form2 = document.getElementById('Form2');
 const pizzasize = document.getElementById('pizzasize');
 const pizzacrust = document.getElementById('pizzacrust');
 const pizzatoppings = document.getElementById('form');
-const pizzanumber = document.getElementById('pizzanumber');
+let pizzanumber = document.getElementById('pizzanumber');
 
 let Next1 = document.getElementById("Next1");
 let Back2 = document.getElementById("Back2");
-
-Next1.onclick=function(){
-  Form1.style.left="-450px";
-  Form2.style.left="40px";
-}
-  
- form.addEventListener('checkout'),(e)=>{
-   e.preventDefault();
-
-   checkInputs();
-
- };
+let addpizza = document.getElementById('addpizza');
   
  function checkInputs() {
    const pizzasizeValue = pizzasize.value.trim();
