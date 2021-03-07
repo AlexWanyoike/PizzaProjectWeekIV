@@ -27,16 +27,16 @@ function getToppings(){
   }else if(toppings==='tikkasauce'){
     return(40);
   }else if(toppings==='chilli'){
-    return(50)
+    return(50);
   }
 }
-function numberOfPizza(){
-  var nums= parseInt(document.getElementById('pizzanumber'));
-  return(nums);
-}
+//function numberOfPizza(){
+ //(numberOfPizza())* var nums= parseInt(document.getElementById('pizzanumber'));
+ // return(nums);
+//}
 
 function total(){
-  var sum = (numberOfPizza())* (getSize()+getToppings());
+  var sum = getSize()+getToppings();
   return sum;
 }
 
