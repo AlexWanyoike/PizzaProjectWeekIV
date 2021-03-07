@@ -45,11 +45,13 @@ function getDelivery(){
     return(600);
   }else if(deliverys==='kilimani'){
     return(30);
-}}
-function numberOfPizza(){
- var nums= document.getElementById('pizzanumber').value;
+  }
+}
+function numberpizzas(){
+ var nums = parseInt(document.getElementById('pizzanumber'));
   return(nums);
 }
+alert(numberpizzas);
 
 function total(){
   var sum =  (getSize()+getToppings()+getDelivery());
