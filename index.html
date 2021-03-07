@@ -71,12 +71,15 @@
 
 
 <!---->
-            <div class="form-control">
-            <label for="">How many would you get?</label>
-                <div>
+            <div class="form-control" >
+            
+                <label for="">How many would you get?</label>
+                <div id="pizzanumber">
                 <input type="number" placeholder="Number of Pizza">
-                </div>  
+                </div> 
             </div>
+            
+            
             
 
 
@@ -93,11 +96,28 @@
 <!---->
             
         </form>
-
-
+    </div>
+<!---->
+    <div class="container">
+        <form action="">
+            <h3>CREATE ACCOUNT</h3>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="contact" placeholder="Contact" required>
+            <div class="form-control">
+                <label>Where should we deliver</label>
+                <div>
+                    <select name="pizzadelivery" id="pizzadelivery" aria-placeholder="Size" type="radio" class="form-text">
+                        <option class="fas-check-circle">Nairobi</option>
+                        <option class="fas-check-circle">Nakuru</option>
+                        <option class="fas-check-circle">Thika</option>
+                        <option class="fas-check-circle">Naivasha</option>
+                        <option class="fas-check-circle">Kilimani</option>
+                    </select>
+                </div>
+        </form>
 
     </div>
-
 
 
 </body>
