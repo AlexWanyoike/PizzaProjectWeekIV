@@ -5,7 +5,7 @@ let pizzacrust = document.getElementById('pizzacrust');
 let pizzatoppings = document.getElementById('pizzatoppings');
 let pizzanumber = document.getElementById('pizzanumber');
 let totalTag = document.getElementById('output');
-let addPizza = document.getElementById('addpizza');
+
 
 function getSize(){
   let size = document.getElementById('pizzasize').value
@@ -30,15 +30,15 @@ function getToppings(){
     return(50)
   }
 }
-
-function total(){
-  var sum = (getSize()+getToppings());
-  return sum;
+function numberOfPizza(){
+  var nums= parseInt(document.getElementById('pizzanumber'));
+  return(nums);
 }
 
-
-
-
+function total(){
+  var sum = (numberOfPizza())* (getSize()+getToppings());
+  return sum;
+}
 
 function getName(event){
   event.preventDefault()
@@ -46,19 +46,20 @@ function getName(event){
   let pizzacrust = document.getElementById('pizzacrust').value
   let pizzatoppings = document.getElementById('pizzatoppings').value
   let pizzanumber = document.getElementById('pizzanumber').value
-  
   let summaryTag = document.getElementById('summary')
   let message = ` You have order a ${pizzasize} ${pizzacrust} ${pizzatoppings}`
   summaryTag.innerHTML = message;
+  let addPizza = document.getElementById('addpizza');
+  addPizza.onclick = function(){
+  summaryTag.innerHTML = message;
+  form1.reset
+  console.log('Hello World')
+}
   let totalTag = document.getElementById('output');
   let outputMessage = `Your Bill is ${total()}`
   totalTag.innerHTML = outputMessage;
 }
 
-addPizza.onclick = function(){
-  sumaryTag.innerHTML = message;
-  form1.reset
-}
 
 
   
