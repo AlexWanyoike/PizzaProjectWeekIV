@@ -4,6 +4,7 @@ let pizzasize = document.getElementById('pizzasize')
 let pizzacrust = document.getElementById('pizzacrust');
 let pizzatoppings = document.getElementById('pizzatoppings');
 let pizzanumber = document.getElementById('pizzanumber');
+let pizzadelivery = document.getElementById('pizzadelivery');
 let totalTag = document.getElementById('output');
 
 
@@ -27,16 +28,31 @@ function getToppings(){
   }else if(toppings==='tikkasauce'){
     return(40);
   }else if(toppings==='chilli'){
-    return(50);
+    return(50)
   }
 }
-//function numberOfPizza(){
- //(numberOfPizza())* var nums= parseInt(document.getElementById('pizzanumber'));
- // return(nums);
-//}
+function getDelivery(){
+  let deliverys = document.getElementById('pizzadelivery').value
+  if(deliverys==='none'){
+    return(0);
+  }else if(deliverys==='nairobi'){
+    return(100);
+  }else if(deliverys==='nakuru'){
+    return(500);
+  }else if(deliverys==='thika'){
+    return(200)
+  }else if(deliverys==='naivasha'){
+    return(600);
+  }else if(deliverys==='kilimani'){
+    return(30);
+}}
+function numberOfPizza(){
+ var nums= document.getElementById('pizzanumber').value;
+  return(nums);
+}
 
 function total(){
-  var sum = getSize()+getToppings();
+  var sum =  (getSize()+getToppings()+getDelivery());
   return sum;
 }
 
