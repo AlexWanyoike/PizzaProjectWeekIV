@@ -5,7 +5,8 @@ img{
 }
 .carousel-caption{
     position: absolute;
-    top: 10%;
+    top: 0%;
+    text-shadow: 1px 1px 15px #000; 
     
 }
 .carousel-caption h2{
@@ -16,11 +17,6 @@ img{
 }
 *{
     box-sizing: border-box;
-
-}
-*{
-    box-sizing: border-box;
-
 }
 body{
     background-color:rgb(31, 11, 11);
@@ -30,6 +26,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    
 
 }
 .container{
@@ -48,10 +45,9 @@ body{
 .header h2{
     margin: 0;
 }
-.form{
-    padding: 30px 40px;
-    width: 90%;
-    height: 90%;
+.form1{
+    padding: 150px 40px;
+    margin-left: -100%;
     
 }
 .form-control{
@@ -61,6 +57,8 @@ body{
     padding: 1rem;
     width: 90%;
     height: 90%;
+    font-size: 25px;
+    background-color: #f7f7f7;
 }
 
 
@@ -68,6 +66,7 @@ body{
     display: inline-block;
     margin-bottom: 10px;
     font-size: 20px; 
+    
 }
 
 .form-control input{
@@ -109,6 +108,15 @@ form button{
     cursor: pointer;
 
 }
+.important{
+    position: left;
+    margin-left: -25%;
+    margin-right: 20%;
+    margin-top: 26%;
+    font-size: 20px;
+    padding: 10px;
+}
+
 
 .step-col{
     width: 120px;
