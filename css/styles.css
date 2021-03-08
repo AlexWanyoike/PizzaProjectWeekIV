@@ -109,6 +109,10 @@ form button{
     width: 120px;
     background-color: linear-gradient(to right,#ff105f,#ffad06);
 }
-
+.img{
+    width: 100%;
+    height: 100%;
+    
+}
 
 
