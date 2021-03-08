@@ -18,15 +18,21 @@
 <body>
 <!---->
 
-
-
-<!---->
-    <div>
-    <div class="container center">
-        <div class="header">
-            <h2>Make your Order</h2>
+    <div class="container-fluid padding">
+    <div class="row welcome text-center carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/Untitled design (1).png" alt="background Photo 1"> 
         </div>
+        
+ <!---->
+ 
+    <div class="container left">
         <form class="form1" id="form1" onsubmit="getName(event)">
+            <div class="container left">
+                <div class="carousel-caption">
+                    <h2>NAMASTE PIZZA</h2>
+                </div>
+            </div>
             <div class="form-control">
                 <label for="">Size Makes the Difference</label>
                 <div>
@@ -37,8 +43,6 @@
                 </select>
                 <small>Error Message</small>
                 </div>
-                
-            
             </div>
             
 
@@ -109,26 +113,42 @@
                     <option class="fas-check-circle" value="kilimani">Kilimani</option>
                 </select>
             </div>
+
+
+ <!---->           
+            <div class="btn-box">
+                <button type="button" id="addpizza">Add Pizza</button>
+                <button type="submit">Submit</button>
+            </div>  
         </div>
-        <div class="btn-box">
-            <button type="button" id="addpizza">Add Pizza</button>
-            <button type="submit">Submit</button>
-        </div>  
-        </div>
-
-
-<!---->
-
-    <div class="step-row">
-        <div class="form-control">Summary:<span id="summary" ></span></div>
         
-        <div class="form-control">Total:<span id="output" ></span> </div>
+        </div>
+
+
+
+        <div class="form-control">
+            <div class="step-row">
+                <div class="form-control">Summary:<span id="summary" ></span></div>  
+                <div class="form-control">Total:<span id="output" ></span> </div>
+            </div>
+
+        </div>
+        
+
     </div>
+
+
+
+
+
+
     </form>
-</div>
-</div>
 <!---->
 
+    
+    
+</div>
+</div>
 
-</body>
-</html>
+    </div>   
+    </div>

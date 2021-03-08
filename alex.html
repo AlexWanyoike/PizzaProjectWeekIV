@@ -1,0 +1,226 @@
+
+
+<!---->
+<div>
+    <div class="container center">
+        <div class="header">
+            <h2>Make your Order</h2>
+        </div>
+        <form class="form1" id="form1" onsubmit="getName(event)">
+            <div class="form-control">
+                <label for="">Size Makes the Difference</label>
+                <div>
+                <select name="pizzasize" id="pizzasize" aria-placeholder="Size" type="radio" class="form-text">
+                    <option value="small" class="fas-check-circle">Small</option>
+                    <option value="medium" class="fas-check-circle">Medium</option>
+                    <option value="large" class="fas-check-circle">Large</option>
+                </select>
+                <small>Error Message</small>
+                </div>
+                
+            
+            </div>
+            
+
+<!---->
+
+            <div class="form-control">
+            <label>The Crust Is a must</label>
+            <div>
+                <select name="pizzacrust" id="pizzacrust" aria-placeholder="Size" type="radio" class="form-text">
+                    <option value="crispy" class="fas-check-circle">Crispy</option>
+                    <option value="stuffed" class="fas-check-circle">Stuffed</option>
+                    <option value="gluten-free" class="fas-check-circle">Gluten-free</option>
+                </select>
+                <small>Error Message</small>
+            </div>
+            </div>
+            
+
+
+<!---->
+
+
+            <div class="form-control">
+            <label>What`s Pizza without Toppings?</label>
+            <div>
+                <select name="pizzatoppings" id="pizzatoppings" aria-placeholder="Size" type="radio" class="form-text">
+                    <option class="fas-check-circle" value="none">None</option>
+                    <option class="fas-check-circle" value="mushrooms">Mushrooms</option>
+                    <option class="fas-check-circle" value="tikkasauce">Tikka Sauce</option>
+                    <option class="fas-check-circle" value="cheese">Cheese</option>
+                    <option class="fas-check-circle" value="chilli">Chilli</option>
+                </select>
+                <small>Error Message</small> 
+            </div>
+            </div>
+           
+
+
+<!---->
+            <div class="form-control" >
+            
+                <label for="">How many would you get?</label>
+                <div id="pizzanumber">
+                <input type="number" placeholder="Number of Pizza">
+                </div> 
+            </div>
+            
+            
+            
+
+
+ <!---->
+
+<!---->
+        <div class="form-control">
+        <label for="">Delivery Details</label>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="contact" placeholder="Contact" required>
+            <label>Where should we deliver</label>
+            <div>
+                <select name="pizzadelivery" id="pizzadelivery" aria-placeholder="Size" type="radio" class="form-text">
+                    <option class="fas-check-circle" value="none"> Self Pick-up</option>
+                    <option class="fas-check-circle" value="nairobi">Nairobi</option>
+                    <option class="fas-check-circle" value="nakuru">Nakuru</option>
+                    <option class="fas-check-circle" value="thika">Thika</option>
+                    <option class="fas-check-circle" value="naivasha">Naivasha</option>
+                    <option class="fas-check-circle" value="kilimani">Kilimani</option>
+                </select>
+            </div>
+        </div>
+        <div class="btn-box">
+            <button type="button" id="addpizza">Add Pizza</button>
+            <button type="submit">Submit</button>
+        </div>  
+        </div>
+
+
+<!---->
+
+    <div class="step-row">
+        <div class="form-control">Summary:<span id="summary" ></span></div>
+        
+        <div class="form-control">Total:<span id="output" ></span> </div>
+    </div>
+    </form>
+</div>
+</div>
+<!---->
+
+
+</body>
+</html>
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: lightblue;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.9);
+    width: 400px;
+    max-width: 100%;
+    transition: 0.5s;
+}
+.header{
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+.header h2{
+    margin: 0;
+}
+.form{
+    padding: 30px 40px;
+    width: 90%;
+    height: 90%;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    padding: 1rem;
+    width: 90%;
+    height: 90%;
+}
+
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+
+.form-control input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+.form-text{
+    position: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #f0f0f0;
+    font-family: inherit;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative ;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background-color: linear-gradient(to right,#ff105f,#ffad06);
+}

@@ -70,7 +70,7 @@ function getName(event){
   let summaryTag = document.getElementById('summary')
   let message = ` You have order a ${pizzasize} ${pizzacrust} ${pizzatoppings} ${pizzanumber}`
   summaryTag.innerHTML = message;
-    addpizza.onclick = function(){
+      addpizza.onclick = function(){
       summaryTag.innerHTML = message;
       document.getElementById('form1').reset();
       
