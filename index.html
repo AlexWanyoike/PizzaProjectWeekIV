@@ -17,7 +17,6 @@
 </head>
 <body>
 <!---->
-
     <div class="container-fluid padding">
     <div class="row welcome text-center carousel-inner">
         <div class="carousel-item active">
@@ -30,10 +29,8 @@
                 <div class="form-control">Total:<span id="output" ></span> </div>
             </div>
         </div>
-        </div>
-        
+        </div>   
  <!---->
- 
     <div class="container center">
         
         <form class="form1" id="form1" onsubmit="getName(event)">
@@ -54,10 +51,7 @@
                 <small>Error Message</small>
                 </div>
             </div>
-            
-
 <!---->
-
             <div class="form-control">
             <label>The Crust Is a must</label>
             <div>
@@ -69,52 +63,37 @@
                 <small>Error Message</small>
             </div>
             </div>
-            
-
-
 <!---->
-
-
-            <div class="form-control">
-            <label>What`s Pizza without Toppings?</label>
-            <div>
-                <select name="pizzatoppings" id="pizzatoppings" aria-placeholder="Size" type="radio" class="form-text">
-                    <option class="fas-check-circle" value="none">None</option>
-                    <option class="fas-check-circle" value="mushrooms">Mushrooms</option>
-                    <option class="fas-check-circle" value="tikkasauce">Tikka Sauce</option>
-                    <option class="fas-check-circle" value="cheese">Cheese</option>
-                    <option class="fas-check-circle" value="chilli">Chilli</option>
-                </select>
-                <small>Error Message</small> 
-            </div>
-            </div>
-           
-
-
+        <div class="form-control">
+        <label>What`s Pizza without Toppings?</label>
+        <div>
+            <select name="pizzatoppings" id="pizzatoppings" aria-placeholder="Size" type="radio" class="form-text">
+                <option class="fas-check-circle" value="none">None</option>
+                <option class="fas-check-circle" value="mushrooms">Mushrooms</option>
+                <option class="fas-check-circle" value="tikkasauce">Tikka Sauce</option>
+                <option class="fas-check-circle" value="cheese">Cheese</option>
+                <option class="fas-check-circle" value="chilli">Chilli</option>
+            </select>
+            <small>Error Message</small> 
+        </div>
+        </div>
 <!---->
-            <div class="form-control" >
-            
-                <label for="">How many would you get?</label>
-                <div id="pizzanumber">
-                <input type="number" placeholder="Number of Pizza">
-                </div> 
-            </div>
-            
-            
-            
-
-
- <!---->
-
+        <div class="form-control" >
+        
+            <label for="">How many would you get?</label>
+            <div id="pizzanumber">
+            <input type="number" placeholder="Number of Pizza" min="1">
+            </div> 
+        </div>
 <!---->
         <div class="form-control">
         <label for="">Delivery Details</label>
         <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
+        <input type="email" placeholder="Email">
         <input type="contact" placeholder="Contact" required>
             <label>Where should we deliver</label>
             <div>
-                <select name="pizzadelivery" id="pizzadelivery" aria-placeholder="Size" type="radio" class="form-text">
+                <select name="pizzadelivery" id="pizzadelivery" aria-placeholder="Size" type="radio" class="form-text" required>
                     <option class="fas-check-circle" value="none"> Self Pick-up</option>
                     <option class="fas-check-circle" value="nairobi">Nairobi</option>
                     <option class="fas-check-circle" value="nakuru">Nakuru</option>
@@ -123,41 +102,23 @@
                     <option class="fas-check-circle" value="kilimani">Kilimani</option>
                 </select>
             </div>
+        <input type="text" placeholder="District" required>
+        <input type="text" placeholder="Area Name">
+        <input type="text" placeholder="House Number" required>
 
-
+        </div>
  <!---->           
+        <div class="form-control">
             <div class="btn-box">
                 <button type="button" id="addpizza">Add Pizza</button>
                 <button type="submit">Submit</button>
             </div>  
-        </div>
-        
-        </div>
-
-
-
-        <div class="form-control">
-            <div class="step-row">
-                <div class="form-control">Summary:<span id="summary" ></span></div>  
-                <div class="form-control">Total:<span id="output" ></span> </div>
-            </div>
-        </div>
-        
+        </div>       
 
     </div>
-
-
-
-
-
-
     </form>
-<!---->
-
-    
-    
-</div>
-</div>
-
+<!----> 
+    </div>
+    </div>
     </div>   
     </div>

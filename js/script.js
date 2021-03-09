@@ -68,7 +68,7 @@ function getName(event){
   let pizzanumber = parseInt(document.getElementById('pizzanumber').value)
   let addpizza = document.getElementById('addpizza');
   let summaryTag = document.getElementById('summary')
-  let message = ` You have order a ${pizzasize} ${pizzacrust} ${pizzatoppings} ${pizzanumber}`
+  let message = ` You order is ${pizzanumber} ${pizzasize} ${pizzacrust} with ${pizzatoppings} toppings `
   summaryTag.innerHTML = message;
       addpizza.onclick = function(){
       summaryTag.innerHTML = message;
@@ -79,7 +79,8 @@ function getName(event){
   let outputMessage = `Your Bill is ${total()}`
   totalTag.innerHTML = outputMessage;
 }
-console.log('pizzanumber')
+
+
 
 
   
