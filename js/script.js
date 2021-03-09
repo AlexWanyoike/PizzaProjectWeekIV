@@ -5,6 +5,11 @@ let pizzacrust = document.getElementById('pizzacrust');
 let pizzatoppings = document.getElementById('pizzatoppings');
 let pizzanumber = document.getElementById('pizzanumber');
 let pizzadelivery = document.getElementById('pizzadelivery');
+let deliverydetails = document.getElementById('deliverydetails')
+let namedelivery = document.getElementById('namedelivery');
+let districtdelivery = document.getElementById('districtdelivery');
+let areadelivery = document.getElementById('areadelivery');
+let housedelivery = document.getElementById('housedelivery');
 let totalTag = document.getElementById('output');
 
 
@@ -21,15 +26,15 @@ function getSize(){
 
 function getToppings(){
   let toppings = document.getElementById('pizzatoppings').value
-  if(toppings==='none'){
-    return(0);
-  }else if(toppings==='mushrooms'){
-    return(30);
-  }else if(toppings==='tikkasauce'){
-    return(40);
-  }else if(toppings==='chilli'){
-    return(50)
-  }
+        if(toppings==='none'){
+          return(0);
+        }else if(toppings==='mushrooms'){
+          return(30);
+        }else if(toppings==='tikkasauce'){
+          return(40);
+        }else if(toppings==='chilli'){
+          return(50)
+        }
 }
 function getDelivery(){
   let deliverys = document.getElementById('pizzadelivery').value
@@ -66,15 +71,21 @@ function getName(event){
   let pizzacrust = document.getElementById('pizzacrust').value
   let pizzatoppings = document.getElementById('pizzatoppings').value
   let pizzanumber = parseInt(document.getElementById('pizzanumber').value)
+  let namedelivery = document.getElementById('namedelivery').value
+  let districtdelivery = document.getElementById('districtdelivery').value
+  let areadelivery = document.getElementById('areadelivery').value
+  let housedelivery = document.getElementById('housedelivery').value
   let addpizza = document.getElementById('addpizza');
   let summaryTag = document.getElementById('summary')
+  let deliverydetailsTag = document.getElementById('deliverydetails')
+  let information = `To: ${namedelivery}  District: ${districtdelivery} ${areadelivery} House: ${housedelivery} Charges: ${getDelivery()} `
   let message = ` You order is ${pizzanumber} ${pizzasize} ${pizzacrust} with ${pizzatoppings} toppings `
   summaryTag.innerHTML = message;
-      addpizza.onclick = function(){
-      summaryTag.innerHTML = message;
-      document.getElementById('form1').reset();
-      
-    }
+  deliverydetailsTag.innerHTML = information;
+  addpizza.onclick = function(){
+    summaryTag.innerHTML = message;
+    deliverydetailsTag.innerHTML = information;
+  }
   let totalTag = document.getElementById('output');
   let outputMessage = `Your Bill is ${total()}`
   totalTag.innerHTML = outputMessage;
