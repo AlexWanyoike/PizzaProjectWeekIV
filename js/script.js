@@ -12,7 +12,6 @@ let areadelivery = document.getElementById('areadelivery');
 let housedelivery = document.getElementById('housedelivery');
 let totalTag = document.getElementById('output');
 
-
 function getSize(){
   let size = document.getElementById('pizzasize').value
   if(size==='small'){
@@ -53,6 +52,7 @@ function getToppings(){
           return(100);
         }
 }
+
 function getDelivery(){
   let deliverys = document.getElementById('pizzadelivery').value
   if(deliverys==='none'){
@@ -69,13 +69,12 @@ function getDelivery(){
     return(80);
   }
 }
+
 function numberpizzas(){
  var nums = parseInt(document.getElementById('pizzanumber').value);
   alert(numberpizzas());
   return(nums);
-  
 }
-
 
 function total(){
   var sum =  (getSize()+getToppings()+getDelivery());
@@ -107,9 +106,3 @@ function getName(event){
   let outputMessage = `Your Bill is ${total()}`
   totalTag.innerHTML = outputMessage;
 }
-
-
-
-
-  
- 
