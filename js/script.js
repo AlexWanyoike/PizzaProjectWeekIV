@@ -26,14 +26,31 @@ function getSize(){
 
 function getToppings(){
   let toppings = document.getElementById('pizzatoppings').value
-        if(toppings==='none'){
+  let size = document.getElementById('pizzasize').value
+        if(size==='small' && toppings==='none' ){
           return(0);
-        }else if(toppings==='mushrooms'){
-          return(30);
-        }else if(toppings==='tikkasauce'){
-          return(40);
-        }else if(toppings==='chilli'){
+        }else if(toppings==='mushrooms' && size==='small'){
+          return(50);
+        }else if(toppings==='tikkasauce' && size==='small'){
+          return(50);
+        }else if(toppings==='chilli'&& size==='small'){
           return(50)
+        }else if(toppings==='none' && size==='medium'){
+          return(0);
+        }else if(toppings==='mushrooms' && size==='medium'){
+          return(80);
+        }else if(toppings==='tikkasauce' && size==='medium'){
+          return(80);
+        }else if(toppings==='chilli'&& size==='medium'){
+          return(50);
+        }else if(toppings==='none' && size==='large'){
+          return(0);
+        }else if(toppings==='mushrooms' && size==='large'){
+          return(100);
+        }else if(toppings==='tikkasauce' && size==='large'){
+          return(100);
+        }else if(toppings==='chilli'&& size==='large'){
+          return(100);
         }
 }
 function getDelivery(){
@@ -43,13 +60,13 @@ function getDelivery(){
   }else if(deliverys==='nairobi'){
     return(100);
   }else if(deliverys==='nakuru'){
-    return(500);
+    return(200);
   }else if(deliverys==='thika'){
-    return(200)
+    return(150)
   }else if(deliverys==='naivasha'){
-    return(600);
+    return(300);
   }else if(deliverys==='kilimani'){
-    return(30);
+    return(80);
   }
 }
 function numberpizzas(){
