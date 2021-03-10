@@ -26,8 +26,6 @@ body{
     justify-content: center;
     min-height: 100vh;
     margin: 0;
-    
-
 }
 .container{
     background-color: #fff;
@@ -47,7 +45,7 @@ body{
 }
 .form1{
     padding: 130px 40px;
-    margin-left: -100%;
+    margin-left: -0%;
     
 }
 .form-control{
@@ -57,7 +55,7 @@ body{
     padding: 1rem;
     width: 90%;
     height: 100%;
-    font-size: 23px;
+    font-size: 18px;
     background-color: #f7f7f7;
 }
 
@@ -65,7 +63,7 @@ body{
 .form-control label{
     display: inline-block;
     margin-bottom: 10px;
-    font-size: 20px; 
+    font-size: 15px; 
     
 }
 
@@ -73,7 +71,7 @@ body{
     border: 2px solid #f0f0f0;
     display: block;
     font-family: inherit;
-    font-size: 18px;
+    font-size: 15px;
     padding: 10px;
     width: 100%;
 }
@@ -81,7 +79,7 @@ body{
     position: center;
     width: 100%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     border: 2px solid #f0f0f0;
     font-family: inherit;
 }
@@ -93,13 +91,13 @@ body{
 }
 .btn-box{
     width: 100%;
-    margin: 30px auto;
+    margin: 20px auto;
     text-align: center;
     border: 2px solid #f0f0f0;
     display: block;
     font-family: inherit;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 15px;
+    padding: 2px;
     width: 100%;
 }
 form button{
@@ -116,10 +114,10 @@ form button{
 }
 .important{
     position: left;
-    margin-left: -25%;
+    margin-left: -0%;
     margin-right: 20%;
-    margin-top: 26%;
-    font-size: 20px;
+    margin-top: 23%;
+    font-size: 10px;
     padding: 10px;
 }
 .step-col{
